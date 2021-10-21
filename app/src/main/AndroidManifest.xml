@@ -9,14 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LiveData">
-        <activity android:name=".room.DataActivity"></activity>
-        <activity android:name=".MainActivity" android:launchMode="singleTask">
+        <activity android:name=".room.reports.ViewReportsActivity">
+
+        </activity>
+        <activity android:name=".room.workout.WorkoutActivity" />
+        <activity android:name=".room.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".room.addExcercise.AddExcerciseActivity" />
+        <activity
+            android:name=".room.login.RegisterActivity"
+            android:launchMode="singleTask"></activity>
     </application>
 
 </manifest>

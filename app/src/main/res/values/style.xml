@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="et_style">
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/spinner_back</item>
+    </style>
+
+    <style name="ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#C62828</item>
+    </style>
+
+</resources>

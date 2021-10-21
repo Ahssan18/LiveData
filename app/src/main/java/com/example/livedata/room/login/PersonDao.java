@@ -1,14 +1,10 @@
-package com.example.livedata.room;
-
-import android.app.Person;
+package com.example.livedata.room.login;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
-
-import java.util.List;
 
 @Dao
 public interface PersonDao {
@@ -18,8 +14,8 @@ public interface PersonDao {
     @Delete
     void deleteRecord(Student s);
 
-    @Query("SELECT * FROM STUDENT")
-    List<Student> getRecord();
+    @Query("SELECT * FROM STUDENT WHERE email=:email AND password =:password ")
+    Student getRecord(String email,String password);
 
     @Update
     void upDateRecord(Student student);
